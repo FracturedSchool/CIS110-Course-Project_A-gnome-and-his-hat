@@ -10,12 +10,17 @@ def delete_last_line(n=1):
         sys.stdout.write('\x1b[1A') #Move cursor up a line
         sys.stdout.write('\x1b[2K') #Deletes the line
 
+#Function to use delete_last_line to wait for player        
+def wait():
+    input(f"Press Enter to continue")
+    delete_last_line(1)
+
 #Greet the user and explain how to play.
 print(f"Welcome to 'A Gnome and his Hat'.")
 print(f"Here you will partake in a tale of a Gnome who's lost his hat.")
 print(f"Before we begin, I'll ask you a few questions.")
 print(f"After typing your answer, be sure to press the enter key.")
-input(f"\nAnytime the story is stopped, press enter to continue...")
+wait()
 
 #5 questions to fill variables.
 character = input(f"What is the gnome's name? ").strip()
