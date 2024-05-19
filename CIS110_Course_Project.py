@@ -19,7 +19,7 @@ def wait():
 print(f"Welcome to 'A Gnome and his Hat'.")
 print(f"Here you will partake in a tale of a Gnome who's lost his hat.")
 print(f"Before we begin, I'll ask you a few questions.")
-print(f"After typing your answer, be sure to press the enter key.")
+print(f"After typing your answer, be sure to press the enter key.\n")
 wait()
 
 #5 questions to fill variables.
@@ -57,4 +57,4 @@ if favoriteThing.lower() == "something":
 
 input(f"Press Enter to begin the story")
 
-os.system('cls')
+os.system('cls') #clears screen to start the story on a fresh page
