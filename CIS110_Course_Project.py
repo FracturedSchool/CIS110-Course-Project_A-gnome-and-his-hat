@@ -1,5 +1,6 @@
 #A gnome and his hat.
 
+from enum import KEEP
 import os
 import sys
 from tkinter import CHAR
@@ -207,3 +208,5 @@ while keep_playing == "yes":
             print(f"THE END?")
             story("-"*8)
     keep_playing = input(f"\nPlay again? Type yes or no: ").lower().strip()
+    while keep_playing != "yes" and keep_playing != "no":
+        keep_playing = input(f"Please type yes or no: ")
