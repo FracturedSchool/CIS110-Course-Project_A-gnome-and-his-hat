@@ -1,9 +1,9 @@
 #A gnome and his hat.
 
-from enum import KEEP
+
 import os
 import sys
-from tkinter import CHAR
+
 os.system("")
 
 #Using ANSI escape codes to make a function that clears lines (This does not work in the IDE, must be run externally in the python terminal)
@@ -78,12 +78,12 @@ while keep_playing == "yes":
     story(f"{character} awakens with a yawn and a stretch. Invigorated in a way that only 'morning people' understand.")
     story(f"{character} wipes the sleep from his eyes as he enjoys the slight breeze enveloping him.")
     story(f"'The wind feels great blowing through my lush {hair} hair,' {character} thinks to himself...")
-    story(f"Or he would if he had any hair. Instead the rush of cold air across his balding head brings him to a frightening\nconclusion...")
+    story(f"Or he would if he had any hair. Instead the rush of cold air across his balding head brings him to a frightening conclusion...")
     story(f"'MY HAT! MY HAT IS GONE!' {character} exclaims with great urgence!")
-    story(f"He searches frantically for his hat throughout the garden. But try as he might, he can't find that deep {hat_color}\nhat. Not even a trace of {hat_material}!")
+    story(f"He searches frantically for his hat throughout the garden. But try as he might, he can't find that deep {hat_color} hat. Not even a trace of {hat_material}!")
     story(f"While looking for his {hat_color} hat, he comes upon a dark black feather.")
-    story(f"'OF COURSE! I, {character}, would NEVER lose such a fine {hat_material} hat! I'VE BEEN ROBBED!' {character}\nthinks out loud.")
-    story(f"'Well! I can't just wait around here! I've got to track them down! Who knows how far the thief has already\ngotten!' He shouts as he rushes to prepare himself.\n")
+    story(f"'OF COURSE! I, {character}, would NEVER lose such a fine {hat_material} hat! I'VE BEEN ROBBED!' {character} thinks out loud.")
+    story(f"'Well! I can't just wait around here! I've got to track them down! Who knows how far the thief has already gotten!' He shouts as he rushes to prepare himself.\n")
 
     #Decision 1
     bring_bag = input(f"Should {character} bring his bag? It may slow him down. Type yes or no: ").lower().strip()
@@ -128,7 +128,7 @@ while keep_playing == "yes":
         story(f"Angered by the mocking of the feathered foe, {character} chucks one of his few coins at the beast.")
         story(f"Realizing the grave mistake he just made {character} steps back in fear of what's to come.")
         story(f"However, this only causes more laughter from the creature.")
-        story(f"As if to humor him, the beast accepts the coin as if it were a trade. Returning to {character} his forlorn\nhat. Still laughing as he leaves.")
+        story(f"As if to humor him, the beast accepts the coin as if it were a trade. Returning to {character} his forlorn hat. Still laughing as he leaves.")
         story(f"Arriving back at the garden, {character} inspects his {hat_color} hat for any damage.")
         story(f"Wait...")
         story(f"This nametag...\n")
@@ -137,20 +137,23 @@ while keep_playing == "yes":
         story('-'*22)
         if character.lower() == "gnomislav":
             story(f"\n{character} sheds a single tear of joy for the reunion with his hat")
-            story(f"He plops down on the cool night ground and puts his beautiful {hat_color} {hat_material} hat back in it's\nrightful place upon his head.")
+            story(f"He plops down on the cool night ground and puts his beautiful {hat_color} {hat_material} hat back in it's rightful place upon his head.")
             story(f"'I'll never let you go again,' he swears.")
-            print(f"\n","-"*8)
+            print(f"\n")
+            print(f"-"*8)
             print(f"THE END.")
             story("-"*8)
         else:
             story(f"\n'THIS ISN'T EVEN MY HAT!!!!!'")
-            print(f"/n","-"*8)
+            print(f"\n")
+            print(f"-"*8)
             print(f"THE END?")
             story("-"*8)
     elif bring_bag == "no" and approach == "no":        #Ending 2
         story(f"As {character} heads back to the garden, a single tear falls down his cheek.")
         story(f"Never again shall he know the comfort of his hat.")
-        print(f"\n","-"*8)
+        print(f"\n")
+        print(f"-"*8)
         print(f"THE END.")
         story("-"*8)
     elif bring_bag == "yes" and approach == "no":       #Ending 3
@@ -163,11 +166,12 @@ while keep_playing == "yes":
         story(f"Alas, it's too late. The bag on his back is too heavy")
         story(f"The shadow of death is already upon {character}.")
         story(f"Never again will he enjoy {favorite_thing} again.")
-        print(f"\n","-"*8)
+        print(f"\n")
+        print(f"-"*8)
         print(f"THE END.")
         story("-"*8)
     else:       #Ending 4
-        story(f"'No beast can compete with the cunning of a Gnome!' {character} thinks to himself as he prepares to sneak\nup to the creature and reclaim what is rightfully his.")
+        story(f"'No beast can compete with the cunning of a Gnome!' {character} thinks to himself as he prepares to sneak up to the creature and reclaim what is rightfully his.")
         story(f"With great dexterity, {character} approaches the slumbering beast as if he were light as air.")
         story(f"Next to the beast, he can finally see the prize. His {hat_color} {hat_material} hat.")
         story(f"{character} grabs onto the fine {hat_material} and attempts to pull it out from under the creature.")
@@ -197,14 +201,16 @@ while keep_playing == "yes":
         story('-'*22)
         if character.lower() == "gnomislav":
             story(f"\n{character} sheds a single tear of joy for the reunion with his hat")
-            story(f"He plops down on the cool night ground and puts his beautiful {hat_color} {hat_material} hat back in it's\nrightful place upon his head.")
+            story(f"He plops down on the cool night ground and puts his beautiful {hat_color} {hat_material} hat back in it's rightful place upon his head.")
             story(f"'I'll never let you go again,' he swears.")
-            print(f"\n","-"*8)
+            print(f"\n")
+            print(f"-"*8)
             print(f"THE END.")
             story("-"*8)
         else:
             story(f"\n'THIS ISN'T EVEN MY HAT!!!!!'")
-            print(f"\n","-"*8)
+            print(f"\n")
+            print(f"-"*8)
             print(f"THE END?")
             story("-"*8)
     keep_playing = input(f"\nPlay again? Type yes or no: ").lower().strip()
