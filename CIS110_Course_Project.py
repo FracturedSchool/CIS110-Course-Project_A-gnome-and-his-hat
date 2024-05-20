@@ -2,6 +2,7 @@
 
 import os
 import sys
+from tkinter import CHAR
 os.system("")
 
 #Using ANSI escape codes to make a function that clears lines (This does not work in the IDE, must be run externally in the python terminal)
@@ -90,3 +91,21 @@ else:
     story(f"He feels invigorated by the wind in his beard.")
 
 story(f"\nFollowing the trail of feathers takes {character} out of the garden.")
+story(f"This is the first time in months, if not years, that {character} has ventured beyond the flowers he calls home.")
+story(f"Sadly, he does not have time to enjoy the sights of suburbia laid before him.")
+story(f"Chasing after the feathers, he comes upon a large, slumbering beast. Its black feathers raising with each breath.")
+story(f"Beneath the beast, he catches a glimse of {hat_color} {hat_material}.")
+story(f"'THAT'S! IT MUST BE! IT'S MY HAT!!!!!' {character} thinks with bewildered eyes.\n")
+
+#Decision 2
+approach = input(f"Does {character} dare to approach the sleeping creature? Type yes or no: ").lower().strip()
+while approach != "yes" and approach != "no":
+    approach = input(f"Please type yes or no: ").lower().strip()
+
+if approach == "yes":
+    story(f"Steeling his nerves, {character} creeps forward.")
+else:
+    story(f"'Of course! Such a small gnome as myself could never dare to anger a beast such as this!' {character} assures himself.")
+    story(f"Certain in his thoughts, he decides his hat, while oh so precious, is not worth the danger.")
+    story(f"{character} turns back; saddened, but glad to be alive")
+
