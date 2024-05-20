@@ -74,3 +74,6 @@ story(f"'The wind feels great blowing through my lush {hair},' {character} think
 story(f"Or he would if he had any hair. Instead the rush of cold air across his balding head brings him to a frightening conclusion...")
 story(f"'MY HAT! MY HAT IS GONE!' {character} exclaims with great urgence!")
 story(f"He searches frantically for his hat throughout the garden. But try as he might, he can't find that deep {hat_color} hat. Not even a trace of {hat_material}!")
+story(f"While looking for his {hat_color} hat, he comes upon a dark black feather.")
+story(f"'OF COURSE! I, {character}, would NEVER lose such a fine {hat_material} hat! I'VE BEEN ROBBED!' {character} thinks out loud.")
+story(f"'Well! I can't just wait around here! I've got to track them down! Who knows how far the thief has already gotten!' He shouts as he rushes to prepare himself")
