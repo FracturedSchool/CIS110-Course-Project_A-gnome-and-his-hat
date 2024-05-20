@@ -76,4 +76,17 @@ story(f"'MY HAT! MY HAT IS GONE!' {character} exclaims with great urgence!")
 story(f"He searches frantically for his hat throughout the garden. But try as he might, he can't find that deep {hat_color} hat. Not even a trace of {hat_material}!")
 story(f"While looking for his {hat_color} hat, he comes upon a dark black feather.")
 story(f"'OF COURSE! I, {character}, would NEVER lose such a fine {hat_material} hat! I'VE BEEN ROBBED!' {character} thinks out loud.")
-story(f"'Well! I can't just wait around here! I've got to track them down! Who knows how far the thief has already gotten!' He shouts as he rushes to prepare himself")
+story(f"'Well! I can't just wait around here! I've got to track them down! Who knows how far the thief has already gotten!' He shouts as he rushes to prepare himself.\n")
+
+#Decision 1
+bring_bag = input(f"Should {character} bring his bag? It may slow him down. Type yes or no: ").lower().strip()
+while bring_bag != "yes" and bring_bag != "no":
+    bring_bag = input("Please type yes or no: ")
+    
+if bring_bag == "yes":
+    story(f"While {character}'s movement is slowed, the clink of his coins reassures him.")
+else:
+    story(f"Unsure how far the thief has gotten, {character} decides to leave his belongings behind.")
+    story(f"He feels invigorated by the wind in his beard.")
+
+story(f"\nFollowing the trail of feathers takes {character} out of the garden.")
