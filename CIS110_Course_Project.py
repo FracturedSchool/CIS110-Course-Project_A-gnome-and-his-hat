@@ -82,7 +82,7 @@ story(f"'Well! I can't just wait around here! I've got to track them down! Who k
 #Decision 1
 bring_bag = input(f"Should {character} bring his bag? It may slow him down. Type yes or no: ").lower().strip()
 while bring_bag != "yes" and bring_bag != "no":
-    bring_bag = input("Please type yes or no: ")
+    bring_bag = input("Please type yes or no: ").lower().strip()
     
 if bring_bag == "yes":
     story(f"While {character}'s movement is slowed, the clink of his coins reassures him.")
@@ -103,9 +103,41 @@ while approach != "yes" and approach != "no":
     approach = input(f"Please type yes or no: ").lower().strip()
 
 if approach == "yes":
-    story(f"Steeling his nerves, {character} creeps forward.")
+    story(f"Steeling his nerves, {character} creeps forward.\n")
 else:
     story(f"'Of course! Such a small gnome as myself could never dare to anger a beast such as this!' {character} assures himself.")
     story(f"Certain in his thoughts, he decides his hat, while oh so precious, is not worth the danger.")
-    story(f"{character} turns back; saddened, but glad to be alive")
+    story(f"{character} turns back; saddened, but glad to be alive\n")
 
+#Ending 1
+if bring_bag == "yes" and approach == "yes":
+    story(f"Approaching the beast, {character} realizes too late the he should've left his bag.")
+    story(f"As he nears the rising feathers, a resounding CLING comes from the sack on his back.")
+    story(f"The beast begins to rise, alerted by the sound.")
+    story(f"Upon looking at {character}, the fearsome creature caws, but it doesn't sound like a threat.")
+    story(f"No...")
+    story(f"Is this?...")
+    story(f"Laughter?")
+    story(f"The beast is laughing at {character}'s balding head!")
+    story(f"Angered by the mocking of the feathered foe, {character} chucks one of his few coins at the beast.")
+    story(f"Realizing the grave mistake he just made {character} steps back in fear of what's to come.")
+    story(f"However, this only causes more laughter from the creature.")
+    story(f"As if to humor him, the beast accepts the coin as if it were a trade. Returning to {character} his forlorn hat. Still laughing as he leaves.")
+    story(f"Arriving back at the garden, {character} inspects his {hat_color} hat for any damage.")
+    story(f"Wait...")
+    story(f"This nametag...\n")
+    print("-"*22)
+    print("PROPERTY OF GNOMISLAV")
+    story('-'*22)
+    if character.lower() == "gnomislav":
+        story(f"\n{character} sheds a single tear of joy for the reunion with his hat")
+        story(f"He plops down on the cool night ground and puts his beautiful {hat_color} {hat_material} hat back in it's rightful place upon his head.")
+        story(f"'I'll never let you go again,' he swears.")
+        print(f"/n","-"*8)
+        print(f"THE END.")
+        story("-"*8)
+    else:
+        story(f"\n'THIS ISN'T EVEN MY HAT!!!!!'")
+        print(f"/n","-"*8)
+        print(f"THE END?")
+        story("-"*8)
