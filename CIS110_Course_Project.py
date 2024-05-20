@@ -38,7 +38,7 @@ while keep_playing == "yes":
     while len(hair) == 0:
         hair = input(f"Please enter a color: ").strip()
 
-    hat_color = input(f"What color is {character}'s hat?").strip()
+    hat_color = input(f"What color is {character}'s hat? ").strip()
     corrected = False #whether or not player was corrected
     while hat_color.lower() == "colorless" or len(hat_color) == 0:
         if hat_color.lower() == "colorless" and corrected:
@@ -76,7 +76,7 @@ while keep_playing == "yes":
     story(f"Our story begins here in a lush garden as dusk begins to set. Sunlight barely peeking from the western horizon.")
     story(f"{character} awakens with a yawn and a stretch. Invigorated in a way that only 'morning people' understand.")
     story(f"{character} wipes the sleep from his eyes as he enjoys the slight breeze enveloping him.")
-    story(f"'The wind feels great blowing through my lush {hair},' {character} thinks to himself...")
+    story(f"'The wind feels great blowing through my lush {hair} hair,' {character} thinks to himself...")
     story(f"Or he would if he had any hair. Instead the rush of cold air across his balding head brings him to a frightening\nconclusion...")
     story(f"'MY HAT! MY HAT IS GONE!' {character} exclaims with great urgence!")
     story(f"He searches frantically for his hat throughout the garden. But try as he might, he can't find that deep {hat_color}\nhat. Not even a trace of {hat_material}!")
@@ -138,7 +138,7 @@ while keep_playing == "yes":
             story(f"\n{character} sheds a single tear of joy for the reunion with his hat")
             story(f"He plops down on the cool night ground and puts his beautiful {hat_color} {hat_material} hat back in it's\nrightful place upon his head.")
             story(f"'I'll never let you go again,' he swears.")
-            print(f"/n","-"*8)
+            print(f"\n","-"*8)
             print(f"THE END.")
             story("-"*8)
         else:
@@ -149,7 +149,7 @@ while keep_playing == "yes":
     elif bring_bag == "no" and approach == "no":        #Ending 2
         story(f"As {character} heads back to the garden, a single tear falls down his cheek.")
         story(f"Never again shall he know the comfort of his hat.")
-        print(f"/n","-"*8)
+        print(f"\n","-"*8)
         print(f"THE END.")
         story("-"*8)
     elif bring_bag == "yes" and approach == "no":       #Ending 3
@@ -162,7 +162,7 @@ while keep_playing == "yes":
         story(f"Alas, it's too late. The bag on his back is too heavy")
         story(f"The shadow of death is already upon {character}.")
         story(f"Never again will he enjoy {favorite_thing} again.")
-        print(f"/n","-"*8)
+        print(f"\n","-"*8)
         print(f"THE END.")
         story("-"*8)
     else:       #Ending 4
@@ -198,12 +198,12 @@ while keep_playing == "yes":
             story(f"\n{character} sheds a single tear of joy for the reunion with his hat")
             story(f"He plops down on the cool night ground and puts his beautiful {hat_color} {hat_material} hat back in it's\nrightful place upon his head.")
             story(f"'I'll never let you go again,' he swears.")
-            print(f"/n","-"*8)
+            print(f"\n","-"*8)
             print(f"THE END.")
             story("-"*8)
         else:
             story(f"\n'THIS ISN'T EVEN MY HAT!!!!!'")
-            print(f"/n","-"*8)
+            print(f"\n","-"*8)
             print(f"THE END?")
             story("-"*8)
     keep_playing = input(f"\nPlay again? Type yes or no: ").lower().strip()
